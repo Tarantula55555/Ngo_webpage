@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIRIJANA ABHIVRUDDI SEVA SANGHAM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Rubik';
+            margin: 0;
+            padding: 0;
+            background-color: #c7e8ac; /* Light mint green */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff6b81; /* Light pink color */
+            text-transform: uppercase;
+            font-size: 36px; /* Larger font size */
+            margin-bottom: 10px; /* Increased margin */
+            text-decoration: underline; /* Underline the heading */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        ol {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .donate-button, .facebook-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Styling for the list items */
+        .list-item {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        /* Hover effect */
+        .list-item:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Hidden content initially */
+        .list-item .hidden-content {
+            display: none;
+            margin-top: 10px;
+        }
+
+        /* Show hidden content when clicked */
+        .list-item.clicked .hidden-content {
+            display: block;
+        }
+
+        /* Light pink button style */
+        button {
+            background-color: #ff6b81; /* Light pink */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Light pink button hover effect */
+        button:hover {
+            background-color: #ff93a3; /* Lighter pink on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GIRIJANA ABHIVRUDDI SEVA SANGHAM</h1>
+    </header>
+
+    <div class="container">
+        <h2>గిరిజన అభివృద్ధి సేవా సంఘం</h2>
+        <ol>
+            <li class="list-item">
+                GIRIJANA ABHIVRUDDI SEVA SANGHAM is established as on 19-March-2014 as a Registered Societies (Non-Government) in Telangana.
+                <div class="hidden-content">
+                    Registered Societies (Non-Government)
+                </div>
+            </li>
+            <li class="list-item">
+                Registration No: 177/2014
+                <div class="hidden-content">
+                    Registration Number: 177/2014
+                </div>
+            </li>
+            <li class="list-item">
+                Motive:
+                <div class="hidden-content">
+                    Aged/Elderly, Art & Culture, Children, Civic Issues, Differently Abled, Dalit Upliftment, Environment & Forests, Food Processing, HIV/AIDS, Human Rights, Information & Communication Technology, Legal Awareness & Aid, Labour & Employment, Land Resources, Minority Issues, Micro Small & Medium Enterprises, Right to Information & Advocacy, Rural Development & Poverty Alleviation in Telangana->Hyderabad, Khammam
+                </div>
+            </li>
+            <li class="list-item">
+                Contact Email: <a href="mailto:mohanzoology@gmail.com">mohanzoology@gmail.com</a>
+                <div class="hidden-content">
+                    Email: mohanzoology@gmail.com
+                </div>
+            </li>
+        </ol>
+
+        <!-- Donate Button -->
+        <div class="donate-button">
+            <button id="donate-btn">Donate</button>
+        </div>
+
+        <!-- Facebook Link -->
+        <div class="facebook-link">
+            <a href="https://m.facebook.com/p/Girijana-abhivrudhi-seva-sangam-100069473674013/" target="_blank" rel="noopener noreferrer">
+                Visit us on Facebook
+            </a>
+        </div><br>
+
+        <!-- Image Container -->
+        <div class="image-container">
+            <img src="https://www.searchdonation.com/images/clients-images/3.jpg" alt="Image 1">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GIRIJANA ABHIVRUDDI SEVA SANGHAM. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript code here
+        // Toggle hidden content on click
+        var listItems = document.querySelectorAll('.list-item');
+        listItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                this.classList.toggle('clicked');
+            });
+        });
+
+        // Donation confirmation
+        document.getElementById('donate-btn').addEventListener('click', function() {
+            var confirmDonate = confirm('Are you sure you want to donate?');
+            if (confirmDonate) {
+                window.location.href = 'https://www.giveindia.org/nonprofit/wayanad-girijana-seva-trust';
+            }
+        });
+    </script>
+</body>
+</html>
